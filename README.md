@@ -1,6 +1,6 @@
 Matthew Ahrenstein's Custom Rules for thefuck
 ==============
-These are some custom rules used for [thefuck](https://github.com/nvbn/thefuck). Just **git clone git@github.com:ahrenstein/thefuck-rules.git ~/.thefuck/rules/**  and you'll be good to go
+These are some custom rules used for [thefuck](https://github.com/nvbn/thefuck). Just **git clone git@github.com:ahrenstein/thefuck-rules.git ~/.config/thefuck/rules/**  and you'll be good to go
 
 Custom Rules
 ------------

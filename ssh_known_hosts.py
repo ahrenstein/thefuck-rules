@@ -1,3 +1,6 @@
+import re
+from thefuck.utils import for_app
+
 commands = ('ssh', 'scp', 'root')
 
 @for_app(*commands)
@@ -14,7 +17,6 @@ def match(command):
     )
 
     return any(re.findall(pattern, command.stderr) for pattern in patterns)
-
 
 def get_new_command(command):
     return command.script
@@ -33,5 +35,5 @@ def side_effect(old_cmd, command):
             fh.writelines(lines)
 
 # Optional:
+priority = 5
 enabled_by_default = True
-priority = 999
