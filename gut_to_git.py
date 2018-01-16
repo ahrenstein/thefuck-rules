@@ -1,5 +1,5 @@
 def match(command):
-    return ('gut: command not found' in command.stderr.lower())
+    return ('gut: command not found' in command.output.lower())
 
 def get_new_command(command):
     return command.script.replace("gut ","git ")
